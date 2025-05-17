@@ -6,12 +6,19 @@
  * @last modified by  : jhon.cortes@maccresi.com
 **/
 import { LightningElement } from 'lwc';
-import { ambito } from "c/aqsRepasoStringUtils";
+import { ambito,redeclaracion,hoisting } from "c/aqsRepasoStringUtils";
+
 
 export default class AqsRepasoDeclaracionVariables extends LightningElement {
 
     connectedCallback() {
-       let result = ambito();
-       console.log(result);
+       let resultAmbito = ambito();
+       let resultRedeclaracion = redeclaracion();
+       let resultHoisting = hoisting();
+
+       console.log(resultAmbito);
+       console.log(resultRedeclaracion);
+       console.log(resultHoisting);
+
     }
 }
