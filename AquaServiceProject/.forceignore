@@ -1,3 +1,4 @@
+# .forceignore v2
 # List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
 # More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
 #
@@ -7,6 +8,53 @@ package.xml
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
+#force-app/main/default/lwc/jsconfig.json
+#force-app/main/default/lwc/.eslintrc.json
 
 # LWC Jest
 **/__tests__/**
+
+## Apps
+force-app/main/default/appMenus/AppSwitcher.appMenu-meta.xml
+
+#Reports
+force-app/main/default/reports/
+
+# Sharing Rules
+#force-app/main/default/sharingRules/Account.sharingRules-meta.xml
+force-app/main/default/sharingRules/Case.sharingRules-meta.xml
+force-app/main/default/sharingRules/Lead.sharingRules-meta.xml
+
+
+# Avoid sfdcInternalInt_sfdc_scrt2 permission set. Weird error
+force-app/main/default/permissionsets/sfdcInternalInt__sfdc_scrt2.permissionset-meta.xml
+
+# SFDX - Gitlab Connected App in Production environment
+force-app/main/default/connectedApps/SFDXGitlabConnectionForCICD.connectedApp-meta.xml
+
+# SF - SCPI Connected App
+force-app/main/default/connectedApps/MAC_DevSFSCPIIntegration.connectedApp-meta.xml
+force-app/main/default/connectedApps/MAC_PreSFSCPIIntegration.connectedApp-meta.xml
+force-app/main/default/connectedApps/MAC_SFSCPIIntegration.connectedApp-meta.xml
+
+
+# Territories
+force-app/main/default/settings/Territory2.settings-meta.xml
+force-app/main/default/territory2Models/MAC_ModelAccountArea/MAC_ModelAccountArea.territory2Model-meta.xml
+force-app/main/default/territory2Types/MAC_AccountArea.territory2Type-meta.xml
+
+# Setting Case
+force-app/main/default/settings/Case.settings-meta.xml
+
+# Navigation Menus
+force-app/main/default/navigationMenus/Default_Navigation1.navigationMenu-meta.xml
+
+force-app-sites/main/default/documents
+force-app-sites/main/default/networkBranding
+
+force-app-sites/main/default/email/unfiled$public/CommunityHeadlessForgotPasswordTemplate*
+
+# fieldRestrictionRules
+**/fieldRestrictionRules/**
+*.fieldRestrictionRules
+

@@ -1,13 +1,98 @@
 {
-  "orgName": "Demo company",
+  "orgName": "Aquaservice",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "adminEmail": "lordkortex@gmail.com",
+  "language": "en_US",
+  "features": [ 
+    "API",
+    "Sites",
+    "ContactsToMultipleAccounts",
+    "PersonAccounts",
+    "LiveAgent",
+    "AuthorApex",
+    "ServiceCloud",
+    "Workflow",
+    "ProcessBuilder",
+    "DefaultWorkflowUser",
+    "ForceComPlatform",
+    "LightningServiceConsole",
+    "PlatformCache",
+    "Communities",
+    "PartnerCommunity",
+    "CustomerCommunityLogin",
+    "SharedActivities",
+    "FieldAuditTrail"
+  ], 
   "settings": {
-    "lightningExperienceSettings": {
-      "enableS1DesktopEnabled": true
+    "accountSettings":{
+      "showViewHierarchyLink":true
     },
-    "mobileSettings": {
-      "enableS1EncryptedStoragePref2": false
+    "activitiesSettings":{
+      "enableActivityReminders":true,
+      "enableGroupTasks":true,
+      "enableRecurringEvents":true,
+      "enableRecurringTasks":true,
+      "enableMultidayEvents":true,
+      "showHomePageHoverLinksForEvents":true,
+      "allowUsersToRelateMultipleContactsToTasksAndEvents":true
+    },
+    "omniChannelSettings":{
+      "enableOmniChannel":true
+    },
+    "liveAgentSettings":{
+      "enableLiveAgent":true
+    },
+    "languageSettings":{
+      "enableTranslationWorkbench":true
+    },
+    "chatterSettings":{
+      "enableChatter":true
+    },
+    "enhancedNotesSettings":{
+      "enableEnhancedNotes":true
+    },
+    "lightningExperienceSettings":{
+      "enableS1DesktopEnabled":true
+    },
+    "opportunitySettings": {
+            "enableOpportunityTeam": true
+    },
+    "pathAssistantSettings":{
+      "pathAssistantEnabled":true
+    },
+    "emailAdministrationSettings":{
+      "enableEnhancedEmailEnabled":true
+    },
+    "forecastingSettings": {
+      "enableForecasts":true
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata":true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled":true
+    },
+    "caseSettings": {
+          "systemUserEmail": "lordkortex@gmail.com"
+     },
+    "securitySettings": {
+      "enableAuditFieldsInactiveOwner": true
+    },
+    "apexSettings": {
+      "enableApexApprovalLockUnlock": true
+    },
+    "dynamicFormsSettings":{
+      "enableFormsOnMobile":true
+    },
+    "userManagementSettings": {
+      "enhancedUserListView":true,
+      "enhancedPermSetList":true
+    },
+    "customAddressFieldSettings": {
+      "enableCustomAddressField":true
+    },
+    "contentSettings": {
+      "enableContent":true
     }
   }
 }
