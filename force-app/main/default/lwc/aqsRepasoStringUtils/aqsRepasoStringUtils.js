@@ -20,6 +20,8 @@ export function ambito() {
   }
   console.log(a); // ✅ 1
   //console.log(b); // ❌ ReferenceError
+
+  return "mensaje de ambito";
 }
 
 /**
@@ -32,6 +34,8 @@ export function redeclaracion() {
 
   let y = 1;
   // let y = 2; // ❌ SyntaxError: Identifier 'y' has already been declared
+
+  return "mensaje de redeclaracion";
 }
 
 /**
@@ -45,4 +49,6 @@ export function hoisting() {
 
   //console.log(t); // ❌ ReferenceError
   //let t = 10;
+
+  return "mensaje de hoisting";
 }
