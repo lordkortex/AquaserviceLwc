@@ -21,9 +21,19 @@ El archivo `sfdx-project.json` contiene información de configuración útil par
 ## Pasos para crear el entorno
 Una vez ya tengas instalado VS code, SF CLI y las extensiones de Salesforce, clona o descarga este repo en tu local y sigue las siguientes instrucciones:
 
-- **Authoriza un ORG** -> Ctrl+ Shift + P  -> Authorize ORG
-- Cambiar el email en el fichero	**config\project-scratch-def.json**
-- Tener en cuenta si la edición es "**Developer**" o "**Enterprise**"
- - Desde la carpeta raiz en tu local, ejecutar el siguiente comando, reemplazando con el nombre de tu "**TU_DEV_HUB**":
+**Descarga el repo** 
+>  git clone https://github.com/lordkortex/AquaserviceLwc
 
+- Cambiar el email en el fichero	**config\project-scratch-def.json**.
+- Tener en cuenta si la edición es "**Developer**" o "**Enterprise**"
+
+**Authoriza un ORG** 
+>  sf org login web -d -a myhuborg
+o
+>  en Vs Code presiona Ctrl+ Shift + P  -> Authorize ORG
+
+**Crea**
 >  sf org create scratch -f config/project-scratch-def.json -a "AQUASERVICE_LWC_01" --name "AQUASERVICE_LWC_01"  -y 29 -v "TU_DEV_HUB"  --json
+
+**Despliega**
+>  sf project deploy start
