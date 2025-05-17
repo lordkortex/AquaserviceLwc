@@ -5,6 +5,7 @@
  * @description       :  Módulo de utilidades para demostrar el comportamiento de variables en JavaScript.
  * Demuestra el comportamiento de variables 'var' y 'let' dentro de un mismo ámbito.
  * 'var' tiene ámbito de función, mientras que 'let' tiene ámbito de bloque.
+ * https://jsbin.com/
  * ***************************************************************************************************************
  */
 
