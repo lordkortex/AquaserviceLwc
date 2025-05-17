@@ -6,7 +6,7 @@ Ahora que ha creado un proyecto de Salesforce DX, ¿qué sigue? Aquí hay alguno
 
 ¿Quiere implementar un conjunto de cambios o crear una aplicación independiente? Elige un [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
+## Configura tu Salesforce DX Project
 
 El archivo `sfdx-project.json` contiene información de configuración útil para su proyecto. Ver [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
