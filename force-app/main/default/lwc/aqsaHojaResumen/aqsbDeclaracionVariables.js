@@ -1,6 +1,6 @@
 /**
  * ***************************************************************************************************************
- * @module aqsRepasoStringUtils
+ * @module aqsDeclaracionVariables
  * @author            :  Jhon Cortes - lordkortex@gmail.com
  * @description       :  Módulo de utilidades para demostrar el comportamiento de variables en JavaScript.
  * Demuestra el comportamiento de variables 'var' y 'let' dentro de un mismo ámbito.

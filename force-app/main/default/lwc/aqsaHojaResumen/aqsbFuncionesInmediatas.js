@@ -1,6 +1,6 @@
 /**
  * ***************************************************************************************************************
- * @module aqsRepasoStringUtils
+ * @module aqsbFuncionesInmediatas
  * @author            :  Jhon Cortes - lordkortex@gmail.com
  * @description       :  Módulo de utilidades para demostrar el comportamiento de variables en JavaScript.
  * Demuestra el comportamiento de variables 'var' y 'let' dentro de un mismo ámbito.
@@ -11,16 +11,16 @@
 
 
 /**
-    Origen: ¿Qué es una expresión de función? En JavaScript hay dos formas principales de definir funciones:
+    Origen: ¿Qué es una expresión de función? En JavaScript hay dos formas principales de definir funciones: Por declaracion o expresion
  */
-export function origen(){
+export function origen() {
 
-    //Version 1
+    //Version 1 : declaracion
     function saludar1() {
         console.log("Hola");
     }
 
-    //Version 2
+    //Version 2: expresion
     const saludar2 = function () {
         console.log("Hola");
     }; //Esta se puede ejecutar si le agregas ().
@@ -43,10 +43,10 @@ export function origen(){
     Encapsular código para que no interfiera con otras partes del programa.
     Ejecutar código inmediatamente sin dejar residuos (variables, funciones) en el ámbito global.
  */
-export function immediatelyInvokedFunctionExpression(){
+export function immediatelyInvokedFunctionExpression() {
     //Como  function
     (function () {
-         console.log('nombre');
+        console.log('nombre');
     })(); // ← ¡Se ejecuta inmediatamente!
 
     //Como arrow function
@@ -82,8 +82,8 @@ export function escapesComparativo() {
 
     //Pero ahora que tenemos let y const, podemos hacer lo mismo sin IIFE:
     {
-    const temp = "secreto";
+        const temp = "secreto";
         // temp vive solo aquí
     }
 }
-  
+

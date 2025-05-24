@@ -1,19 +1,10 @@
 /**
- * ***************************************************************************************************************
- * @module aqsRepasoStringUtils
- * @author            :  Jhon Cortes - lordkortex@gmail.com
- * @description       :  Módulo de utilidades para demostrar el comportamiento de variables en JavaScript.
- * Demuestra el comportamiento de variables 'var' y 'let' dentro de un mismo ámbito.
- * 'var' tiene ámbito de función, mientras que 'let' tiene ámbito de bloque.
- * https://jsbin.com/
- * ***************************************************************************************************************
- */
-
-/**
-    🔍 ¿Qué es un "bloque"?
+  * @module aqsbScopes
+  * @author            :  Jhon Cortes - lordkortex@gmail.com
+  * @description     🔍 ¿Qué es un "bloque"?
     Un bloque en JavaScript es cualquier código encerrado entre { ... }, como en:
  */
-export function bloque(){
+export function bloque() {
     {
         // Esto es un bloque
     }
