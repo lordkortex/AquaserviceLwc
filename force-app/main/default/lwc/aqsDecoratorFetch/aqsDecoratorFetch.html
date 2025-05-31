@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Fetch API en LWC">
+    <div class="slds-p-around_medium">
+      <lightning-button label="Cargar con Promesas" onclick={handleFetchWithPromises}></lightning-button>
+      <lightning-button label="Cargar con Async/Await" onclick={handleFetchWithAsyncAwait} class="slds-m-left_small"></lightning-button>
+
+      <template if:true={error}>
+        <p style="color:red;">Error: {error}</p>
+      </template>
+
+      <template if:true={post}>
+        <h3>{post.title}</h3>
+        <p>{post.body}</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>
