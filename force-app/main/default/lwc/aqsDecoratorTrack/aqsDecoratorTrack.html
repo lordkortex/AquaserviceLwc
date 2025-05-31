@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Demostración de @track y Reactividad">
+    <div class="slds-m-bottom_medium">
+      <h3>@track aplicado correctamente ✅</h3>
+      <p>Nombre: {personaConTrack.nombre}, Edad: {personaConTrack.edad}</p>
+      <lightning-button label="Aumentar edad" onclick={incrementarEdadConTrack}></lightning-button>
+    </div>
+
+    <div class="slds-m-bottom_medium">
+      <h3>Sin @track y sin reemplazo ❌</h3>
+      <p>Nombre: {personaSinTrack.nombre}, Edad: {personaSinTrack.edad}</p>
+      <lightning-button label="Aumentar edad" onclick={incrementarEdadSinTrack}></lightning-button>
+      <p style="color:red;">⚠️ Cambia en JS pero no se re-renderiza en el DOM</p>
+    </div>
+
+    <div>
+      <h3>Sin @track pero con reemplazo ✅</h3>
+      <p>Nombre: {personaModerna.nombre}, Edad: {personaModerna.edad}</p>
+      <lightning-button label="Aumentar edad" onclick={incrementarEdadModerna}></lightning-button>
+    </div>
+  </lightning-card>
+</template>
