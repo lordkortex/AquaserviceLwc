@@ -1,0 +1,11 @@
+/* CSS styles */
+div {
+  font-family: Impact, sans-serif;
+  color: #3749ce;
+}
+
+/*:host {
+  display: block;
+  padding: 90rem;
+  background: lightgray;
+}*/

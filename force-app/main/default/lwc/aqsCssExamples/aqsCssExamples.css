@@ -1,0 +1,30 @@
+:host {
+  --color-fondo: #f0f4f8;
+  --color-texto: #40e15b;
+  --borde-radio: 12px;
+  --padding-general: 1rem;
+   
+}
+
+/*.main {
+  background-color: red !important;
+}*/
+
+.tarjeta {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  border-radius: var(--borde-radio);
+  padding: var(--padding-general);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-texto);
+}
+
+.descripcion {
+  font-size: 1rem;
+  color: var(--color-principal-green);
+}

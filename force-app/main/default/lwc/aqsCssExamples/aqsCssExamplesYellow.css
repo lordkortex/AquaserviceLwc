@@ -1,0 +1,11 @@
+:host {
+  --color-principal-yellow: #deed37;
+}
+
+body {
+  background-color: red !important;
+}
+
+.main {
+  background-color: rgb(255, 0, 200) !important;
+}

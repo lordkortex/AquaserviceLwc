@@ -1,0 +1,8 @@
+/*:host(.destacado) {
+  border: 2px solid blue;
+}*/
+
+.descripcionx {
+  font-size: 3rem;
+  color: var(--color-texto);
+}
