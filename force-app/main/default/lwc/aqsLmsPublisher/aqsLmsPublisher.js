@@ -11,7 +11,8 @@ import SAMPLEMC from '@salesforce/messageChannel/miCanal__c';
 
 export default class AqsLmsPublisher extends LightningElement {
 
-     @track mensaje = '';
+    //Comentario para el commit 
+    @track mensaje = '';
 
     @wire(MessageContext)
     messageContext;
