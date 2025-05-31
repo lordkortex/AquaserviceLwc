@@ -1,0 +1,44 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Binding de clases: buenos y malos ejemplos">
+
+    <!-- ✅ Correcto: clase como string -->
+    <p class={claseSimple}>Clase simple XDD (correcto)</p>
+
+    <!-- ❌ Incorrecto: clase como booleano -->
+    <p class={claseBooleana}>Clase booleana (❌ incorrecto)</p>
+
+    <!-- ❌ Incorrecto: clase como número -->
+    <p class={claseNumero}>Clase número (❌ incorrecto)</p>
+
+    <!-- ✅ Incorrecto: clase como objeto -->
+    <p class={claseObjeto}>Clase objeto (✅ incorrecto)</p>
+
+    <!-- ❌ Incorrecto: clase como función -->
+    <p class={claseFuncion}>Clase función (❌ incorrecto)</p>
+
+    <!-- ✅ Incorrecto: clase como array -->
+    <p class={claseArray}>Clase array (✅ incorrecto)</p>
+
+    <!-- ❌ Incorrecto: clase como array -->
+    <p class={claseArrayQuotes}>Clase array Quotes (❌ incorrecto)</p>
+
+    <!-- ❌ Incorrecto: clase como array -->
+    <p class={claseArrayComplex}>Clase array Complex (❌ incorrecto)</p>
+
+    <!-- ❌ Incorrecto: clase como array -->
+    <p class={claseObject}>Clase Object (❌ incorrecto)</p>
+
+    <!-- ✅ Correcto: clase condicional con getter -->
+    <p class={claseCondicional}>Clase condicional (correcto)</p>
+
+    <lightning-button label="Alternar Estado" onclick={alternarEstado} class="slds-m-top_medium"></lightning-button>
+
+  </lightning-card>
+</template>
