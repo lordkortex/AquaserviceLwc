@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Ejemplo de Binding en LWC">
+    
+    <p class="slds-m-bottom_small">Nombre actual: <strong>{nombre}</strong></p>
+    <lightning-input label="Ingresa tu nombre" value={nombre} onchange={handleNombreChange}></lightning-input>
+    
+    <p class="slds-m-top_small">Nombre en mayúsculas: <strong>{nombreEnMayuscula}</strong></p>
+    <lightning-button class="slds-m-top_medium" label="Limpiar" onclick={handleLimpiar}></lightning-button>
+    
+  </lightning-card>
+</template>
