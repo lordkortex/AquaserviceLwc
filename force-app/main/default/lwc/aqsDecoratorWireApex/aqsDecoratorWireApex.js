@@ -17,6 +17,9 @@ export default class AqsDecoratorWireApex extends LightningElement {
     contactoIndividual;
     error
 
+    //@wire(obtenerContactos, { searchKey: '$searchKey' })
+    //accounts;
+
     @wire(obtenerContactos)
     contactos; // contactos.data / contactos.error
 

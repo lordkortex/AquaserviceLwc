@@ -16,4 +16,15 @@ public with sharing class AqsContactWireController {
        return [SELECT Id, Name, Email FROM Contact LIMIT 1];
        //throw new AuraHandledException('exceptionText');
     }
-}
+
+    @AuraEnabled
+    public static Contact getContactById(Id contactId) {
+        return [SELECT Id, Name, Email FROM Contact WHERE Id = :contactId LIMIT 1];
+    }
+
+      @AuraEnabled
+    public static List<Contact> buscarContactos(String nombre) {
+        return [SELECT Id, Name, Email FROM Contact WHERE Name LIKE :('%' + nombre + '%') LIMIT 10];
+    }
+
+    }

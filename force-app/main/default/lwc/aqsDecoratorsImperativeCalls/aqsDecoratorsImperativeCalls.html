@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Búsqueda de Contactos (Imperativa)">
+    <lightning-input label="Nombre" onchange={handleInputChange}></lightning-input>
+    <lightning-button label="Buscar" onclick={buscar}></lightning-button>
+
+    <template if:true={resultados}>
+      <ul>
+        <template for:each={resultados} for:item="contacto">
+          <li key={contacto.Id}>{contacto.Name} - {contacto.Email}</li>
+        </template>
+      </ul>
+    </template>
+
+    <template if:true={error}>
+      <p style="color:red;">Error: {error.body.message}</p>
+    </template>
+  </lightning-card>
+</template>
