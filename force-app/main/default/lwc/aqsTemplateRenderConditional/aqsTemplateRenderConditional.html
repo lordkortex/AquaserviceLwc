@@ -1,0 +1,32 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Ejemplo de Renderizado Condicional">
+
+    <!-- Selector de estado -->
+    <lightning-button label="Mostrar Éxito" onclick={mostrarExito} class="slds-m-around_x-small"></lightning-button>
+    <lightning-button label="Mostrar Error" onclick={mostrarError} class="slds-m-around_x-small"></lightning-button>
+    <lightning-button label="Mostrar Advertencia" onclick={mostrarAdvertencia} class="slds-m-around_x-small"></lightning-button>
+    <lightning-button label="Reiniciar" onclick={reset} class="slds-m-around_x-small"></lightning-button>
+
+    <!-- Renderizado condicional -->
+    <template lwc:if={esExito}>
+      <p class="exito">✅ Operación completada exitosamente.</p>
+    </template>
+    <template lwc:elseif={esError}>
+      <p class="error">❌ Se produjo un error inesperado.</p>
+    </template>
+    <template lwc:elseif={esAdvertencia}>
+      <p class="advertencia">⚠️ Ten cuidado con los cambios pendientes.</p>
+    </template>
+    <template lwc:else>
+      <p class="neutro">ℹ️ Esperando acción del usuario...</p>
+    </template>
+
+  </lightning-card>
+</template>
