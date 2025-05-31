@@ -1,0 +1,15 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Padre">
+    <lightning-input label="Nombre Padre" value={nombrePadre} onchange={handleChange}></lightning-input>
+    <lightning-input label="Apellido Padre" value={apellidoPadre} onchange={handleChangeApellido}></lightning-input>
+    <c-aqs-decorator-api-child nombre={nombrePadre} apellido={apellidoPadre}></c-aqs-decorator-api-child>
+    <lightning-button label="Enviar" onclick={handleClick}></lightning-button>
+  </lightning-card>
+</template>
