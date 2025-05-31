@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Información de Contacto LDS">
+    <template if:true={contact.data}>
+      <p><strong>Nombre:</strong> {name}</p>
+      <p><strong>Email:</strong> {email}</p>
+      <p><strong>Teléfono:</strong> {phone}</p>
+    </template>
+
+    <template if:true={contact.error}>
+      <p style="color:red;">Error al cargar: {contact.error.message}</p>
+    </template>
+  </lightning-card>
+</template>
