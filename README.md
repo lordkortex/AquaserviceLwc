@@ -1,3 +1,6 @@
+[![moa](https://media.licdn.com/dms/image/v2/C4D0BAQFGuvqzmHz1uA/company-logo_200_200/company-logo_200_200/0/1677846265893/moa_marketing_online_academy_logo?e=1753315200&v=beta&t=toxYTov5PP1uLX4ZahX5gnUy8-DrUggZNK6Q319PUo4 "moa")](https://media.licdn.com/dms/image/v2/C4D0BAQFGuvqzmHz1uA/company-logo_200_200/company-logo_200_200/0/1677846265893/moa_marketing_online_academy_logo?e=1753315200&v=beta&t=toxYTov5PP1uLX4ZahX5gnUy8-DrUggZNK6Q319PUo4 "moa")
+
+
 # Salesforce DX Project: Proximos Pasos
 
 Ahora que ha creado un proyecto de Salesforce DX, ¿qué sigue? Aquí hay algunos recursos de documentación para comenzar.
