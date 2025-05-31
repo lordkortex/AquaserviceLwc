@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Edición">
+    <div class="slds-p-around_medium">
+      <template lwc:if={contactosCount}>
+        <lightning-layout multiple-rows>
+          <template for:each={contactos} for:item="contacto" for:index="i">
+            <lightning-layout-item key={contacto.id} size="12" class="slds-box slds-m-bottom_small slds-p-around_small">
+              <div class="slds-text-title_caps">{i}</div>
+              <div class="slds-text-heading_small slds-m-top_xx-small">{contacto.nombre}</div>
+              <div class="slds-text-body_regular">{contacto.email}</div>
+            </lightning-layout-item>
+          </template>
+        </lightning-layout>
+      </template>
+      <template lwc:else>
+        <p class="slds-text-color_weak">No hay contactos disponibles.</p>
+      </template>
+    </div>
+    <lightning-button label="Cancelar" onclick={cambiarModo}></lightning-button>
+  </lightning-card>
+</template>

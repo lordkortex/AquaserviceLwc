@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Edición">
+    <ul>
+      <template for:each={contactos} for:item="contacto" for:index="i">
+        <li key={contacto.id}>
+            <strong>{i}</strong> 
+            <strong>{contacto.nombre}</strong>
+            <strong>{contacto.email}</strong>
+        </li>
+      </template>
+    </ul>
+    <lightning-button label="Change" onclick={cambiarModo}></lightning-button>
+  </lightning-card>
+</template>
