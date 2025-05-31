@@ -27,4 +27,6 @@ export default class AqsLmsPublisher extends LightningElement {
         publish(this.messageContext, SAMPLEMC, payload);
     }
 
+    // Mensje Channel 02
+
 }
