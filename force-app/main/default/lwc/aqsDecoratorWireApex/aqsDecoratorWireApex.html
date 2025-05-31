@@ -1,0 +1,39 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 05-31-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+  <lightning-card title="Lista de contactos desde Apex">
+
+    Lista de Varios <!-- Si necesita la propiedad data -->
+    <template if:true={contactos.data}>
+      <ul>
+        <template for:each={contactos.data} for:item="c">
+          <li key={c.Id}>{c.Name} – {c.Email}</li>
+        </template>
+      </ul>
+    </template>
+    <template if:true={contactos.error}>
+      <p style="color:red;">Error al cargar: {contactos.error.message}</p>
+    </template>
+  </lightning-card>
+
+  <lightning-card title="Lista de contactos desde Apex">
+
+    Lista de Uno <!-- No necesita la propiedad data -->
+    <template if:true={contactoIndividual}>
+      <ul>
+        <template for:each={contactoIndividual} for:item="c">
+          <li key={c.Id}>{c.Name} – {c.Email}</li>
+        </template>
+      </ul>
+    </template>
+
+    <template if:true={error}>
+      <p style="color:red;">Error al cargar: {error.message}</p>
+    </template>
+  </lightning-card>
+</template>
