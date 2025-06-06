@@ -6,4 +6,8 @@
         <field>AqsCustomField__c</field>
         <value xsi:nil="true"/>
     </values>
+    <values>
+        <field>AqsLongField__c</field>
+        <value xsi:nil="true"/>
+    </values>
 </CustomMetadata>
