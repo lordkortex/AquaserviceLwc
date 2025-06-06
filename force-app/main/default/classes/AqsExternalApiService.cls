@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : jhon.cortes@maccresi.com
  * @group             : 
- * @last modified on  : 05-31-2025
+ * @last modified on  : 06-06-2025
  * @last modified by  : jhon.cortes@maccresi.com
 **/
 public with sharing class AqsExternalApiService {
@@ -10,7 +10,8 @@ public with sharing class AqsExternalApiService {
     public static String getPost() {
         Http http = new Http();
         HttpRequest request = new HttpRequest();
-        request.setEndpoint('https://jsonplaceholder.typicode.com/posts/1');
+        //request.setEndpoint('https://jsonplaceholder.typicode.com/posts/1');
+        request.setEndpoint('callout:' + 'AqsNamedCredential');
         request.setMethod('GET');
 
         try {
