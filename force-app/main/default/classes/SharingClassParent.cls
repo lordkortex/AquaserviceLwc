@@ -6,8 +6,9 @@
  * @last modified by  : jhon.cortes@maccresi.com
 **/
 public virtual with sharing class SharingClassParent {
-    public virtual void mostrarCuentas() {
-        List<Account> cuentas = [SELECT Id, Name FROM Account];
+    public virtual List<Account> mostrarCuentas() {
+        List<Account> cuentas = [SELECT Id, Name, Industry, Phone FROM Account LIMIT 50];
         System.debug('Clase base (with sharing): ' + cuentas.size());
+        return cuentas;
     }
 }

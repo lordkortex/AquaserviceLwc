@@ -6,8 +6,9 @@
  * @last modified by  : jhon.cortes@maccresi.com
 **/
 public class SharingClassChild extends SharingClassParent {
-    public override void mostrarCuentas() {
-        super.mostrarCuentas();
+    public override List<Account> mostrarCuentas() {
+        List<Account> cuentas = super.mostrarCuentas();
         System.debug('Clase hija sin modificador de sharing');
+        return cuentas;
     }
 }

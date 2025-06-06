@@ -6,8 +6,9 @@
  * @last modified by  : jhon.cortes@maccresi.com
 **/
 public inherited sharing class SharingClassInherited {
-    public static void mostrarCuentas() {
-        List<Account> cuentas = [SELECT Id, Name FROM Account];
+    public static List<Account> mostrarCuentas() {
+        List<Account> cuentas = [SELECT Id, Name, Industry, Phone FROM Account LIMIT 50];
         System.debug('inherited sharing: ' + cuentas.size());
+        return cuentas;
     }
 }

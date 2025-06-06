@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 06-06-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+    <lightning-card title="Lista de Cuentas" icon-name="standard:account">
+        <template if:true={cuentas}>
+            <lightning-datatable
+                key-field="Id"
+                data={cuentas}
+                columns={columnas}>
+            </lightning-datatable>
+        </template>
+
+        <template if:true={error}>
+            <p class="slds-text-color_error">Error: {error.body.message}</p>
+        </template>
+    </lightning-card>
+</template>

@@ -6,8 +6,9 @@
  * @last modified by  : jhon.cortes@maccresi.com
 **/
 public class SharingClassDefault {
-    public static void mostrarCuentas() {
-        List<Account> cuentas = [SELECT Id, Name FROM Account];
+    public static List<Account> mostrarCuentas() {
+        List<Account> cuentas = [SELECT Id, Name, Industry, Phone FROM Account LIMIT 50];
         System.debug('Default sharing: ' + cuentas.size());
+        return cuentas;
     }
 }
