@@ -9,6 +9,7 @@ public class AqsSharingAccountSelectorController {
     @AuraEnabled(cacheable=true)
     public static List<Account> obtenerCuentas() {
         //return [SELECT Id, Name, Industry, Phone FROM Account LIMIT 50];
-        return SharingClassWithout.mostrarCuentas();
+        //return SharingClassWith.mostrarCuentas();
+        return new SharingClassChild().mostrarCuentas();
     }
 }
