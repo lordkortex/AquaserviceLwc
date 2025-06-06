@@ -1,0 +1,39 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 06-07-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+    <lightning-card title="🌐 Ejemplo de Localización en LWC">
+        <div class="slds-p-around_medium">
+
+            <!-- 1. Custom Label -->
+            <p><strong>Etiqueta:</strong> {label}</p>
+
+            <!-- 2. Labels de campos traducidos -->
+            <p><strong>Campo 1:</strong> {nameFieldLabel}</p>
+            <p><strong>Campo 2:</strong> {industryFieldLabel}</p>
+
+            <!-- 3. Idioma, Local y Zona -->
+            <p><strong>Idioma del usuario:</strong> {lang}</p>
+            <p><strong>Locale del usuario:</strong> {locale}</p>
+            <p><strong>Zona Horaria:</strong> {timezone}</p>
+
+            <!-- 4. Formato local -->
+            <p><strong>Número:</strong> {formattedNumber}</p>
+            <p><strong>Fecha y hora actual:</strong> {formattedDate}</p>
+
+            <!-- 5. Picklist traducida -->
+            <template if:true={industryOptions}>
+                <lightning-combobox
+                    name="industria"
+                    label="Industrias (Traducidas)"
+                    options={industryOptions}>
+                </lightning-combobox>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>
