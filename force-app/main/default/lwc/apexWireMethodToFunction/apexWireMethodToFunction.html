@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : jhon.cortes@maccresi.com
+  @group             : 
+  @last modified on  : 06-07-2025
+  @last modified by  : jhon.cortes@maccresi.com
+-->
+<template>
+    <lightning-card
+        title="ApexWireMethodToFunction"
+        icon-name="custom:custom63"
+    >
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={contacts}>
+                <template for:each={contacts} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+            <template lwc:elseif={error}>
+               Error
+            </template>
+        </div>
+
+       
+    </lightning-card>
+</template>
