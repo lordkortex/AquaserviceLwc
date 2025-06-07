@@ -2,7 +2,7 @@
   @description       : 
   @author            : jhon.cortes@maccresi.com
   @group             : 
-  @last modified on  : 05-31-2025
+  @last modified on  : 06-07-2025
   @last modified by  : jhon.cortes@maccresi.com
 -->
 <template>
@@ -26,6 +26,13 @@
     </template>
     <template lwc:else>
       <p class="neutro">ℹ️ Esperando acción del usuario...</p>
+    </template>
+
+    <template if:true={isVisible}>
+      <p>Mensaje V</p>
+    </template>
+    <template if:false={isVisible}>
+      <p>Hidden</p>
     </template>
 
   </lightning-card>
