@@ -164,7 +164,8 @@ private class AccountManagerTest {
         Account acc = new Account(Name = 'Test');
         insert acc;
         // Método selectAccount no hace nada significativo con el parámetro, pero llamamos para cubrirlo.
-        AccountManager.selectAccount(acc.Id);
+        List<Account> accounts = AccountManager.selectAccount(acc.Id);
+        System.assertNotEquals(null, accounts);
     }
 
     @isTest

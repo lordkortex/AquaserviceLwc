@@ -16,13 +16,15 @@ public with sharing class AccountManager {
         return acc;
     }
     
-    public static void selectAccount(Id accountId) {
+    public static  List<Account>  selectAccount(Id accountId) {
+         List<Account> accounts ;
         try {
-            List<Account> accounts =   [SELECT Id FROM Account];
+           accounts =   [SELECT Id FROM Account];
         } catch (DmlException e) {
             System.debug('Error deleting account: ' + e.getMessage());
             throw new CustomException('Error deleting account');
         }
+        return accounts;
     }
     
     
@@ -44,8 +46,8 @@ public with sharing class AccountManager {
         return res.getBody();
     }
     
-    
-    public static void doSafeQuery() {
+    @TestVisible
+    private static void doSafeQuery() {
         if (Limits.getQueries() + 1 > Limits.getLimitQueries()) {
             throw new CustomException('Too close to SOQL limit');
         }
