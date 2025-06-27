@@ -11,6 +11,7 @@ public with sharing class AqsContactWireController {
     return [SELECT Id, Name, Email FROM Contact LIMIT 5];
   }
 
+  // Cherry Pick Desarrollo 01
   @AuraEnabled(cacheable=true)
   public static List<Contact> obtenerContactoUnico() {
     return [SELECT Id, Name, Email FROM Contact LIMIT 1];
