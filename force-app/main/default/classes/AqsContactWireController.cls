@@ -6,7 +6,6 @@
  * @last modified by  : jhon.cortes@maccresi.com
  **/
 public with sharing class AqsContactWireController {
-  //Agergar comentario Rama 01
   @AuraEnabled(cacheable=true)
   public static List<Contact> obtenerContactos() {
     return [SELECT Id, Name, Email FROM Contact LIMIT 5];
@@ -18,6 +17,7 @@ public with sharing class AqsContactWireController {
     //throw new AuraHandledException('exceptionText');
   }
 
+  // Cherry Pick Desarrollo 02
   @AuraEnabled
   public static Contact getContactById(Id contactId) {
     return [SELECT Id, Name, Email FROM Contact WHERE Id = :contactId LIMIT 1];
